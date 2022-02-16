@@ -13,7 +13,8 @@ require 'faker'
   restaurant = Restaurant.create!(
     name: Faker::FunnyName.two_word_name,
     address: Faker::Address.street_address,
-    category: Restaurant::CATEGORY.sample,
+    phone_number: Faker::PhoneNumber.phone_number,
+    category: Restaurant::CATEGORY.sample
   )
   puts "finished creating restaurant #{restaurant.id}"
 end
