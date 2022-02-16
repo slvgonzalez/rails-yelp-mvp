@@ -1,0 +1,9 @@
+<div class="container col-4 border p-3 mt-3">
+  <%= simple_form_for(restaurant) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category, collection: Restaurant::CATEGORY %>
+    <%= f.submit %>
+  <% end %>
+</div>
