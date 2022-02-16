@@ -1,5 +1,6 @@
+<h6>Enter the details:</h6>
 <div class="container col-4 border p-3 mt-3">
-  <%= simple_form_for(restaurant) do |f| %>
+  <%= simple_form_for(@restaurant, @review) do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :phone_number %>
