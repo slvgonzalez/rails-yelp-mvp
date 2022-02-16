@@ -11,7 +11,7 @@ require 'faker'
 10.times do
   puts "start creating a restaurant"
   restaurant = Restaurant.create!(
-    name: Faker::FunnyName.two_word_name,
+    name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
     phone_number: Faker::PhoneNumber.phone_number,
     category: Restaurant::CATEGORY.sample
